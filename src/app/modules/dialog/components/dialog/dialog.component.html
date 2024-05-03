@@ -1,0 +1,9 @@
+<div class="dialog-wrapper">
+    <div class="messages-wrapper">
+        <ng-container *ngFor="let message of messages">
+            <app-message [text]="message.message" [my]="message.state"></app-message>
+        </ng-container>
+    </div>
+</div>
+<input type="text">
+

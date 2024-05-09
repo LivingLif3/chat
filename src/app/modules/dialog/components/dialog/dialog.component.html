@@ -1,9 +1,15 @@
 <div class="dialog-wrapper">
     <div class="messages-wrapper">
-        <ng-container *ngFor="let message of messages">
-            <app-message [text]="message.message" [my]="message.state" [ngClass]="{reverse: message.my}"></app-message>
+        <!-- messages$ | async -->
+        <ng-container *ngFor="let message of messages$ | async"> 
+            <app-message (click)="chosenMessage = message.messageId" [chosen]="chosenMessage === message.messageId" [text]="message.message" [my]="message.state" [ngClass]="{reverse: message.my}"></app-message>
         </ng-container>
     </div>
 </div>
-<input type="text">
+<div class="reduct-wrap">
+    <input type="text" [formControl]="updationControl"><br>
+    <button class="reduct" (click)="update()">update</button>
+</div>
+<input type="text" class="send-msg" [formControl]="message"><button class="send" (click)="sendMessage()">send</button>
+<button class="clear" (click)="clearDialog()">clear</button>
 

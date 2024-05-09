@@ -1,6 +1,6 @@
 .dialogs-wrapper {
     width: 1000px;
-    height: 500px;
+    height: 1000px;
     background-color: black;
 
     display: flex;
@@ -14,20 +14,44 @@
     height: 100%;
 }
 
-input {
-    width: 80%;
+.send-msg {
+    width: 70%;
 
     position: fixed;
     bottom: 100px;
-    right: 20px;
+    left: 200px;
 
     padding: 10px;
 
     border: 2px solid rgb(102, 102, 114);
 }
 
+.send {
+    position: fixed;
+    bottom: 100px;
+
+    right: 100px;
+    padding: 10px;
+}
 
 .reverse {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.chosen {
+    border: 1px solid black;
+}
+
+.clear {
+    position: fixed;
+    bottom: 20px;
+
+    padding: 10px;
+}
+
+.reduct-wrap {
+    position: absolute;
+    left: 20px;
+    bottom: 100px;
 }

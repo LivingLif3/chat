@@ -12,6 +12,9 @@ export class MessageComponent implements OnInit {
   @Input()
   my!: boolean;
 
+  @Input()
+  chosen!: boolean;
+
   ngOnInit(): void {
     console.log(this.my);
   }

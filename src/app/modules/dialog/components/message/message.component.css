@@ -3,7 +3,27 @@
 
     justify-content: end;
 
-    background-color: #327398;
-
     width: 100px;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+}
+
+.not-my {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #898e91;
+}
+
+.my {
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    background-color: #327398;
+}
+
+.chosen {
+    border: 2px solid red;
 }

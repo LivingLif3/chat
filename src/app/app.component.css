@@ -1,0 +1,13 @@
+.content-wrapper {
+    padding: 50px;
+
+    display: flex;
+}
+
+.content {
+    flex: 1;
+}
+
+.messages-wrapper {
+    flex: 5
+}

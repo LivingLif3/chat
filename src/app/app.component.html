@@ -4,5 +4,7 @@
       <div class="dilogs-sidebar" [routerLink]="['dialog', dialog.id]">{{dialog.id}}</div>
     </ng-container>
   </div>
+  <div class="messages-wrapper">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<router-outlet></router-outlet>

@@ -38,10 +38,10 @@ export class DialogComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.loading = true;
-    this.activatedRoute.params.subscribe((params) => {
-      this.messages = this.api.getDialogMessages(params['id']);
-      this.loading = false;
-    });
+    // this.loading = true;
+    // this.activatedRoute.params.subscribe((params) => {
+    //   this.messages = this.api.getDialogMessages(params['id']);
+    //   this.loading = false;
+    // });
   }
 }

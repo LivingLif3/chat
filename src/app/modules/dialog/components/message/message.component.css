@@ -1,0 +1,9 @@
+.reverse {
+    display: flex;
+
+    justify-content: end;
+
+    background-color: #327398;
+
+    width: 100px;
+}
